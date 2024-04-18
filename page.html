@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Account Access</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <table id="account-box">
+        <tbody>
+            <tr class="welcome">
+                <td colspan="2">Welcome!</td>
+            </tr>
+            <tr class="username">
+                <td></td>
+                <td>
+                    <textarea id="username" placeholder="Enter your username here"></textarea>
+                </td>
+            </tr>
+            <tr class="email">
+                <td></td>
+                <td>
+                    <input type="text" id="email" placeholder="Enter your email here" oninput="checkEmail()">
+                </td>
+            </tr>
+            <tr class="password">
+                <td></td>
+                <td>
+                    <input type="text" id="password" placeholder="Enter your password here" oninput="maskPassword()">
+                </td>
+            </tr>
+            <tr class="error">
+                <td colspan="2"></td> 
+            </tr>
+            <tr class="button">
+                <td></td>
+                <td class="center">
+                    <button id="sign-in" onclick="signIn()">Sign in</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>    
+</body>
+</html>
